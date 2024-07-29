@@ -33,7 +33,7 @@ const Sidebar = () => {
                 </div>
             </div>
             <div className="relative h-64">
-                <img src="src/assets/img/sidebar-1.png" alt="Image" className="w-full h-full object-cover" />
+                <img src="/src/assets/img/sidebar-1.png" alt="Image" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gray-700 bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 grid grid-cols-1 place-content-between p-5">
                     <h3 className="text-white text-xl font-bold">Grow your own favourite plant</h3>
                     <a href="#" className="text-white w-full duration-300 rounded hover:text-[#4E7C32]">Shop

@@ -1,8 +1,8 @@
 
 const Login = () => {
     return (
-        <section className="flex items-center justify-center px-6 py-8 h-screen">
-            <div className="w-full bg-white">
+        <section className="fixed top-[30%] left-0 w-full h-full z-50">
+            <div className="bg-white border border-solid rounded p-6 max-w-[500px] mx-auto shadow-sm">
                 <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
                     <h1 className="flex items-center justify-center text-2xl font-bold leading-tight tracking-tight text-gray-900 md:text-4xl">
                         Đăng Nhập

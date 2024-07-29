@@ -2,7 +2,7 @@
 const Contact = () => {
     return (
         <div className="flex items-center justify-center pb-10 relative">
-            <img src="src/assets/img/background.png" alt="#" className="absolute right-0 top-0 h-full" />
+            <img src="/src/assets/img/background.png" alt="#" className="absolute right-0 top-0 h-full" />
             <div className="text-left p-8 max-w-4xl mx-auto">
                 <h1 className="text-3xl font-bold text-green-800">
                     Etwas abonnieren<span className="text-green-600">*</span>

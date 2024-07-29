@@ -1,67 +1,425 @@
 {
-  "products": [
+  "categorys": [
+    {
+      "id": 1,
+      "name": "Electronics",
+      "description": "Các sản phẩm điện tử như điện thoại, máy tính, TV, v.v."
+    },
     {
       "id": 2,
-      "name": "Quần jean nữ",
-      "price": 29.99,
-      "image": "https://media3.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/April2023/Ao_thun_oversize_84RISING_Mickey_Mouse_-_Denz9.jpg",
-      "desc": "Quần jean nữ đẹp và phong cách, đi kèm với nhiều loại trang phục khác nhau."
+      "name": "Fashion",
+      "description": "Thời trang nam nữ, giày dép, phụ kiện, v.v."
     },
     {
       "id": 3,
-      "name": "Giày thể thao unisex",
-      "price": 39.99,
-      "image": "https://media3.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/April2023/Ao_thun_oversize_84RISING_Mickey_Mouse_-_Denz9.jpg",
-      "desc": "Giày thể thao unisex vừa vặn và thoải mái, phù hợp cho mọi hoạt động thể chất."
+      "name": "Books",
+      "description": "Các loại sách thuộc nhiều thể loại khác nhau."
     },
     {
       "id": 4,
-      "name": "Túi xách nữ",
-      "price": 25.99,
-      "image": "https://media3.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/April2023/Ao_thun_oversize_84RISING_Mickey_Mouse_-_Denz9.jpg",
-      "desc": "Túi xách nữ tiện dụng và thời trang, phù hợp cho mọi dịp từ đi làm đến dạo phố."
+      "name": "Toys & Games",
+      "description": "Đồ chơi và trò chơi cho trẻ em."
     },
     {
       "id": 5,
-      "name": "Đồng hồ nam",
-      "price": 79.99,
-      "image": "https://media3.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/April2023/Ao_thun_oversize_84RISING_Mickey_Mouse_-_Denz9.jpg",
-      "desc": "Đồng hồ nam sang trọng và lịch lãm, là điểm nhấn cho phong cách thời trang của bạn."
+      "name": "Automotive",
+      "description": "Phụ kiện và sản phẩm ô tô."
+    }
+  ],
+  "products": [
+    {
+      "name": "Smartphone A1 Update",
+      "images": [
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-4.png"
+      ],
+      "price": 200,
+      "description": "Điện thoại thông minh với màn hình 6.5 inch.",
+      "categoryId": 3,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "categoryId": 2,
+      "name": "Leather Jacket",
+      "description": "Áo khoác da thời trang cho mùa đông.",
+      "price": 150,
+      "oldPrice": 180,
+      "images": [
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-4.png"
+      ],
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "categoryId": 3,
+      "name": "Washing Machine X100",
+      "description": "Máy giặt hiệu suất cao với nhiều chế độ giặt.",
+      "price": 400,
+      "oldPrice": 450,
+      "images": [
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-4.png"
+      ],
+      "rating": 5
+    },
+    {
+      "id": 4,
+      "categoryId": 4,
+      "name": "Mystery Novel",
+      "description": "Tiểu thuyết trinh thám lôi cuốn và hấp dẫn.",
+      "price": 20,
+      "oldPrice": 25,
+      "images": [
+        "/src/assets/img/card-4.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-1.png"
+      ],
+      "rating": 4
+    },
+    {
+      "id": 5,
+      "categoryId": 5,
+      "name": "Tennis Racket Pro",
+      "description": "Vợt tennis chuyên nghiệp cho người chơi nâng cao.",
+      "price": 120,
+      "oldPrice": 150,
+      "images": [
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-4.png"
+      ],
+      "rating": 4
     },
     {
       "id": 6,
-      "name": "Áo sơ mi nữ",
-      "price": 19.99,
-      "image": "https://media3.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/April2023/Ao_thun_oversize_84RISING_Mickey_Mouse_-_Denz9.jpg",
-      "desc": "Áo sơ mi nữ thanh lịch và trẻ trung, phù hợp cho các buổi gặp gỡ công việc hoặc hẹn hò."
+      "categoryId": 3,
+      "name": "Skin Care Set",
+      "description": "Bộ chăm sóc da cao cấp cho làn da sáng mịn.",
+      "price": 85,
+      "oldPrice": 100,
+      "images": [
+        "/src/assets/img/card-4.png",
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-3.png"
+      ],
+      "rating": 5
     },
     {
       "id": 7,
-      "name": "Quần jogger nam",
-      "price": 34.99,
-      "image": "https://media3.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/April2023/Ao_thun_oversize_84RISING_Mickey_Mouse_-_Denz9.jpg",
-      "desc": "Quần jogger nam thoải mái và cá tính, phù hợp cho mọi hoạt động từ thể thao đến đi chơi."
+      "categoryId": 1,
+      "name": "Building Blocks Set",
+      "description": "Bộ đồ chơi xếp hình phát triển trí tuệ cho trẻ.",
+      "price": 50,
+      "oldPrice": 60,
+      "images": [
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-4.png"
+      ],
+      "rating": 4
     },
     {
       "id": 8,
-      "name": "Áo khoác đông unisex",
-      "price": 49.99,
-      "image": "https://media3.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/April2023/Ao_thun_oversize_84RISING_Mickey_Mouse_-_Denz9.jpg",
-      "desc": "Áo khoác đông unisex ấm áp và thời trang, là lựa chọn hoàn hảo cho mùa đông."
+      "categoryId": 3,
+      "name": "Car Vacuum Cleaner",
+      "description": "Máy hút bụi ô tô nhỏ gọn và tiện lợi.",
+      "price": 45,
+      "oldPrice": 55,
+      "images": [
+        "/src/assets/img/card-4.png",
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-3.png"
+      ],
+      "rating": 4
     },
     {
       "id": 9,
-      "name": "Balo học sinh",
-      "price": 22.99,
-      "image": "https://media3.coolmate.me/cdn-cgi/image/quality=80,format=auto/uploads/April2023/Ao_thun_oversize_84RISING_Mickey_Mouse_-_Denz9.jpg",
-      "desc": "Balo học sinh tiện dụng và nhẹ nhàng, giúp bạn mang theo mọi thứ một cách dễ dàng."
+      "categoryId": 5,
+      "name": "Vitamin C Supplement",
+      "description": "Thực phẩm chức năng bổ sung vitamin C.",
+      "price": 25,
+      "oldPrice": 30,
+      "images": [
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-4.png"
+      ],
+      "rating": 5
     },
     {
-      "name": "Hoàng Cao Huân",
-      "price": "2004",
-      "image": "https://picsum.photos/300/300",
-      "desc": "Đương nhiên là không rồi",
-      "id": 10
+      "id": 10,
+      "categoryId": 2,
+      "name": "Office Chair",
+      "description": "Ghế văn phòng thoải mái cho thời gian làm việc dài.",
+      "price": 100,
+      "oldPrice": 130,
+      "images": [
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-4.png"
+      ],
+      "rating": 5
+    },
+    {
+      "id": 11,
+      "categoryId": 1,
+      "name": "Tablet Z7",
+      "description": "Máy tính bảng mạnh mẽ với màn hình 10 inch.",
+      "price": 350,
+      "oldPrice": 400,
+      "images": [
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-4.png"
+      ],
+      "rating": 5
+    },
+    {
+      "id": 12,
+      "categoryId": 2,
+      "name": "Sneakers Run",
+      "description": "Giày thể thao thoải mái cho hoạt động hàng ngày.",
+      "price": 90,
+      "oldPrice": 110,
+      "images": [
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-4.png"
+      ],
+      "rating": 4
+    },
+    {
+      "id": 13,
+      "categoryId": 3,
+      "name": "Refrigerator CoolMax",
+      "description": "Tủ lạnh dung tích lớn với công nghệ làm lạnh nhanh.",
+      "price": 500,
+      "oldPrice": 550,
+      "images": [
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-4.png"
+      ],
+      "rating": 5
+    },
+    {
+      "id": 14,
+      "categoryId": 4,
+      "name": "Cookbook",
+      "description": "Sách dạy nấu ăn với nhiều công thức hấp dẫn.",
+      "price": 35,
+      "oldPrice": 45,
+      "images": [
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-4.png"
+      ],
+      "rating": 4
+    },
+    {
+      "id": 15,
+      "categoryId": 5,
+      "name": "Camping Tent",
+      "description": "Lều cắm trại chống nước và bền bỉ.",
+      "price": 150,
+      "oldPrice": 180,
+      "images": [
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-4.png"
+      ],
+      "rating": 4
+    },
+    {
+      "id": 16,
+      "categoryId": 2,
+      "name": "Hair Dryer Pro",
+      "description": "Máy sấy tóc chuyên nghiệp với nhiều chế độ.",
+      "price": 60,
+      "oldPrice": 75,
+      "images": [
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-4.png"
+      ],
+      "rating": 5
+    },
+    {
+      "id": 17,
+      "categoryId": 1,
+      "name": "Remote Control Car",
+      "description": "Ô tô điều khiển từ xa vui nhộn cho trẻ em.",
+      "price": 80,
+      "oldPrice": 100,
+      "images": [
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-4.png"
+      ],
+      "rating": 4
+    },
+    {
+      "id": 18,
+      "categoryId": 5,
+      "name": "Car GPS Navigator",
+      "description": "Hệ thống định vị GPS cho ô tô chính xác.",
+      "price": 200,
+      "oldPrice": 230,
+      "images": [
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-4.png"
+      ],
+      "rating": 5
+    },
+    {
+      "id": 19,
+      "categoryId": 3,
+      "name": "Fitness Tracker",
+      "description": "Thiết bị theo dõi sức khỏe và thể thao.",
+      "price": 75,
+      "oldPrice": 90,
+      "images": [
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-4.png"
+      ],
+      "rating": 4
+    },
+    {
+      "id": 20,
+      "categoryId": 4,
+      "name": "Printer DeskJet",
+      "description": "Máy in văn phòng với chất lượng in sắc nét.",
+      "price": 150,
+      "oldPrice": 180,
+      "images": [
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-4.png"
+      ],
+      "rating": 5
+    },
+    {
+      "name": "Hùngaa",
+      "images": "dsfghm",
+      "price": "20",
+      "description": "advsjbnsdcx",
+      "categoryId": 5,
+      "id": 21
+    },
+    {
+      "name": "Hùngaa",
+      "price": "20",
+      "images": "dsfghm",
+      "description": "Đã sửa",
+      "categoryId": 5,
+      "id": 22
+    },
+    {
+      "name": "aaaaaaaaa",
+      "price": "20",
+      "images": "adcv x",
+      "description": "qfrwsdcs",
+      "categoryId": 3,
+      "id": 23
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "productId": 1,
+      "username": "Nguyen Van A",
+      "rating": 5,
+      "comment": "Sản phẩm rất tốt!"
+    },
+    {
+      "id": 2,
+      "productId": 2,
+      "username": "Tran Thi B",
+      "rating": 4,
+      "comment": "Tôi hài lòng với sản phẩm này."
+    },
+    {
+      "id": 3,
+      "productId": 3,
+      "username": "Le Van C",
+      "rating": 4,
+      "comment": "Giá cả hợp lý."
+    },
+    {
+      "id": 4,
+      "productId": 4,
+      "username": "Pham Thi D",
+      "rating": 4,
+      "comment": "Sản phẩm đúng như mô tả."
+    },
+    {
+      "id": 5,
+      "productId": 5,
+      "username": "Hoang Thi E",
+      "rating": 5,
+      "comment": "Sản phẩm chất lượng cao, rất đáng giá."
+    },
+    {
+      "id": 6,
+      "productId": 6,
+      "username": "Le Thi F",
+      "rating": 5,
+      "comment": "Da mình đã cải thiện rõ rệt."
+    },
+    {
+      "id": 7,
+      "productId": 7,
+      "username": "Nguyen Thi G",
+      "rating": 4,
+      "comment": "Trẻ rất thích chơi với bộ đồ chơi này."
+    },
+    {
+      "id": 8,
+      "productId": 8,
+      "username": "Vu Thi H",
+      "rating": 4,
+      "comment": "Máy hút bụi hoạt động tốt, dễ sử dụng."
+    },
+    {
+      "id": 9,
+      "productId": 9,
+      "username": "Nguyen Van I",
+      "rating": 5,
+      "comment": "Rất hài lòng với hiệu quả của sản phẩm."
+    },
+    {
+      "id": 10,
+      "productId": 10,
+      "username": "Tran Van J",
+      "rating": 5,
+      "comment": "Ghế văn phòng rất thoải mái, hỗ trợ lưng tốt."
     }
   ]
 }
