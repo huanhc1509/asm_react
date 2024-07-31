@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { categoryCT } from '../../../context/CategoryContext';
 import { ICategory } from '../../../interfaces/Category';
 import { Link } from 'react-router-dom';
@@ -11,7 +11,7 @@ const CategoryList = () => {
             <div className="flex items-center justify-between mb-4">
                 <h1 className="text-xl font-bold">Quản lý danh mục</h1>
                 <Link to={`add`} className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
-                    Thêm sản phẩm
+                    Thêm danh mục
                 </Link>
             </div>
             <table className="min-w-full divide-y divide-gray-200 mt-4 border border-gray-300">
@@ -22,6 +22,9 @@ const CategoryList = () => {
                         </th>
                         <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                             Tên
+                        </th>
+                        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Ảnh
                         </th>
                         <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                             Mô tả
@@ -36,6 +39,9 @@ const CategoryList = () => {
                         <tr key={category.id}>
                             <td className="px-6 py-4 whitespace-nowrap text-center">{index + 1}</td>
                             <td className="px-6 py-4 whitespace-nowrap">{category.name}</td>
+                            <td className="px-6 py-4 whitespace-nowrap">
+                                <img width={50} src={category.images[0]} alt={category.name} />
+                            </td>
                             <td className="px-6 py-4 whitespace-nowrap">{category.description}</td>
                             <td className="px-6 py-4 whitespace-nowrap flex items-center space-x-2">
                                 <Link

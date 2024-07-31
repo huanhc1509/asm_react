@@ -24,6 +24,7 @@ import ProductEdit from './pages/admin/product/ProductEdit';
 import CategoryList from './pages/admin/category/CategoryList';
 import CategoryAdd from './pages/admin/category/CategoryAdd';
 import CategoryEdit from './pages/admin/category/CategoryEdit';
+import Search from './pages/client/Search';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
         { path: "", element: <Home /> },
         { path: "detail/:id", element: <Detail /> },
         { path: "category/:categoryId", element: <Categorys /> },
+        { path: "search", element: <Search /> },
 
       ]
     },

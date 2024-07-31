@@ -3,26 +3,49 @@
     {
       "id": 1,
       "name": "Electronics",
+      "images": "/src/assets/img/items-1.png",
       "description": "Các sản phẩm điện tử như điện thoại, máy tính, TV, v.v."
     },
     {
       "id": 2,
       "name": "Fashion",
+      "images": "/src/assets/img/items-2.png",
       "description": "Thời trang nam nữ, giày dép, phụ kiện, v.v."
     },
     {
       "id": 3,
       "name": "Books",
+      "images": "/src/assets/img/items-3.png",
       "description": "Các loại sách thuộc nhiều thể loại khác nhau."
     },
     {
       "id": 4,
       "name": "Toys & Games",
+      "images": "/src/assets/img/items-4.png",
       "description": "Đồ chơi và trò chơi cho trẻ em."
     },
     {
       "id": 5,
       "name": "Automotive",
+      "images": "/src/assets/img/items-5.png",
+      "description": "Phụ kiện và sản phẩm ô tô."
+    },
+    {
+      "id": 6,
+      "name": "Beleuchtung",
+      "images": "/src/assets/img/items-6.png",
+      "description": "Phụ kiện và sản phẩm ô tô."
+    },
+    {
+      "id": 7,
+      "name": "Dünger",
+      "images": "/src/assets/img/items-7.png",
+      "description": "Phụ kiện và sản phẩm ô tô."
+    },
+    {
+      "id": 8,
+      "name": "Growbox",
+      "images": "/src/assets/img/items-8.png",
       "description": "Phụ kiện và sản phẩm ô tô."
     }
   ],
@@ -348,6 +371,81 @@
       "description": "qfrwsdcs",
       "categoryId": 3,
       "id": 23
+    },
+    {
+      "id": 24,
+      "categoryId": 8,
+      "name": "Cookbook",
+      "description": "Sách dạy nấu ăn với nhiều công thức hấp dẫn.",
+      "price": 35,
+      "oldPrice": 45,
+      "images": [
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-4.png"
+      ],
+      "rating": 4
+    },
+    {
+      "id": 25,
+      "categoryId": 7,
+      "name": "Cookbook",
+      "description": "Sách dạy nấu ăn với nhiều công thức hấp dẫn.",
+      "price": 35,
+      "oldPrice": 45,
+      "images": [
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-4.png"
+      ],
+      "rating": 4
+    },
+    {
+      "id": 26,
+      "categoryId": 6,
+      "name": "Cookbook",
+      "description": "Sách dạy nấu ăn với nhiều công thức hấp dẫn.",
+      "price": 35,
+      "oldPrice": 45,
+      "images": [
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-4.png"
+      ],
+      "rating": 4
+    },
+    {
+      "id": 27,
+      "categoryId": 7,
+      "name": "Cookbook",
+      "description": "Sách dạy nấu ăn với nhiều công thức hấp dẫn.",
+      "price": 35,
+      "oldPrice": 45,
+      "images": [
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-4.png"
+      ],
+      "rating": 4
+    },
+    {
+      "id": 28,
+      "categoryId": 8,
+      "name": "Cookbook",
+      "description": "Sách dạy nấu ăn với nhiều công thức hấp dẫn.",
+      "price": 35,
+      "oldPrice": 45,
+      "images": [
+        "/src/assets/img/card-1.png",
+        "/src/assets/img/card-2.png",
+        "/src/assets/img/card-3.png",
+        "/src/assets/img/card-4.png"
+      ],
+      "rating": 4
     }
   ],
   "reviews": [

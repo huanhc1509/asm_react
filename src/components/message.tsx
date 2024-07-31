@@ -7,7 +7,7 @@ const MessageBox = () => {
     setTimeout(() => {
       dispatch({ type: 'message', value: false, text: '' })
     }, 3000)
-  }, [])
+  }, [dispatch])
   return (
     <div className='fixed w-[300px] top-2 right-2 bg-white p-2 shadow-sm'>
       <h4>Thông báo</h4>

@@ -35,7 +35,7 @@ const Header = () => {
             <hr className="max-w-screen-lg mx-auto my-2" />
             {/* Menu điều hướng */}
             <div className="max-w-screen-lg mx-auto">
-                <ul className="flex space-x-12 justify-center">
+                <ul className="flex space-x-8 justify-center">
                     <li>
                         <Link to="/" className="hover:underline pb-4 text-white">Home</Link>
                     </li>

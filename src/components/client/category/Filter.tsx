@@ -1,7 +1,7 @@
 
 const Filter = () => {
     return (
-        <form className="max-w-sm flex w-full gap-4">
+        <form className="max-w-sm flex w-full gap-4 mb-8">
             <div className="flex items-center gap-4">
                 <label htmlFor="sort" className="block text-sm font-medium text-gray-900  whitespace-nowrap">Sort
                     By:</label>

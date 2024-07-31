@@ -5,8 +5,15 @@ import { createCategory, deleteCategory, getAllCategorys, updateCategory } from 
 type Props = {
     children: React.ReactNode
 }
-export const categoryCT = createContext({} as any)
+// interface ProductContextType {
+//     products: IProduct[];
+//     onAdd: (dataProduct: IProduct) => Promise<void>;
+//     onDelete: (id: number | string) => Promise<void>;
+//     onEdit: (formData: IProduct, id: number | string) => Promise<void>;
+// }
+// export const productCT = createContext<ProductContextType | undefined>(undefined);
 
+export const categoryCT = createContext({} as any)
 
 const CategoryContext = ({ children }: Props) => {
     const [categorys, setCategorys] = useState<ICategory[]>([]);

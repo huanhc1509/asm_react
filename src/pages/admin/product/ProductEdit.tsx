@@ -24,7 +24,7 @@ const ProductEdit = () => {
                 categoryId: product.categoryId
             })
         })()
-    }, [])
+    }, [param.id, reset])
     const onSubmit = async (product: IProduct) => {
         await onEdit(product, param.id as string | number)
         navigate('/admin')
