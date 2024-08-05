@@ -2,350 +2,388 @@
   "categorys": [
     {
       "id": 1,
-      "name": "Electronics",
+      "name": "Điện tử",
       "images": "/src/assets/img/items-1.png",
-      "description": "Các sản phẩm điện tử như điện thoại, máy tính, TV, v.v."
+      "description": "Chuyên cung cấp các sản phẩm điện tử tiên tiến như điện thoại thông minh, máy tính xách tay, TV, và nhiều thiết bị khác. Sản phẩm của chúng tôi đảm bảo chất lượng và công nghệ mới nhất, giúp bạn kết nối và làm việc hiệu quả."
     },
     {
       "id": 2,
-      "name": "Fashion",
+      "name": "Thời trang",
       "images": "/src/assets/img/items-2.png",
-      "description": "Thời trang nam nữ, giày dép, phụ kiện, v.v."
+      "description": "Khám phá thế giới thời trang với những bộ sưu tập quần áo, giày dép, và phụ kiện phong phú cho cả nam và nữ. Chúng tôi cập nhật những xu hướng mới nhất để bạn luôn tự tin thể hiện phong cách của mình."
     },
     {
       "id": 3,
-      "name": "Books",
+      "name": "Sách",
       "images": "/src/assets/img/items-3.png",
-      "description": "Các loại sách thuộc nhiều thể loại khác nhau."
+      "description": "Tổng hợp đa dạng các loại sách thuộc nhiều thể loại từ tiểu thuyết, khoa học, lịch sử đến sách giáo dục. Những cuốn sách này không chỉ giúp giải trí mà còn mở rộng tri thức và kỹ năng sống cho bạn."
     },
     {
       "id": 4,
-      "name": "Toys & Games",
+      "name": "Đồ chơi & Trò chơi",
       "images": "/src/assets/img/items-4.png",
-      "description": "Đồ chơi và trò chơi cho trẻ em."
+      "description": "Bộ sưu tập đồ chơi và trò chơi hấp dẫn dành cho trẻ em, giúp phát triển tư duy sáng tạo và kỹ năng xã hội. Sản phẩm an toàn và phù hợp với nhiều độ tuổi."
     },
     {
       "id": 5,
-      "name": "Automotive",
+      "name": "Ô tô",
       "images": "/src/assets/img/items-5.png",
-      "description": "Phụ kiện và sản phẩm ô tô."
+      "description": "Cung cấp các sản phẩm và phụ kiện ô tô chất lượng, từ hệ thống âm thanh đến nội thất và các thiết bị bảo trì. Đảm bảo trải nghiệm lái xe an toàn và thoải mái cho bạn."
     },
     {
       "id": 6,
-      "name": "Beleuchtung",
+      "name": "Chiếu sáng",
       "images": "/src/assets/img/items-6.png",
-      "description": "Phụ kiện và sản phẩm ô tô."
+      "description": "Các sản phẩm chiếu sáng đa dạng, từ đèn trang trí, đèn LED đến hệ thống chiếu sáng thông minh, giúp bạn tạo nên không gian sống hoàn hảo và tiết kiệm năng lượng."
     },
     {
       "id": 7,
-      "name": "Dünger",
+      "name": "Phân bón",
       "images": "/src/assets/img/items-7.png",
-      "description": "Phụ kiện và sản phẩm ô tô."
+      "description": "Cung cấp các loại phân bón và sản phẩm chăm sóc cây trồng, giúp cây phát triển khỏe mạnh và đạt năng suất cao. Phù hợp cho cả cây trồng trong nhà và ngoài trời."
     },
     {
       "id": 8,
-      "name": "Growbox",
+      "name": "Hộp trồng cây",
       "images": "/src/assets/img/items-8.png",
-      "description": "Phụ kiện và sản phẩm ô tô."
+      "description": "Giải pháp trồng cây thông minh với các hộp trồng cây tiện lợi, thích hợp cho không gian nhỏ gọn và dễ dàng sử dụng, giúp bạn tự tay chăm sóc khu vườn nhỏ của mình."
     }
   ],
   "products": [
     {
-      "name": "Smartphone A1 Update",
+      "name": "Điện thoại A1 ",
       "images": [
         "/src/assets/img/card-2.png",
         "/src/assets/img/card-1.png",
         "/src/assets/img/card-3.png",
         "/src/assets/img/card-4.png"
       ],
-      "price": 200,
-      "description": "Điện thoại thông minh với màn hình 6.5 inch.",
+      "price": 200000,
+      "description": "Điện thoại thông minh A1 là sản phẩm mới nhất với màn hình 6.5 inch sắc nét. Thiết kế hiện đại và các tính năng vượt trội, sản phẩm này sẽ mang đến cho bạn trải nghiệm tuyệt vời trong việc giải trí và công việc hàng ngày.",
       "categoryId": 3,
       "id": 1
     },
     {
       "id": 2,
       "categoryId": 2,
-      "name": "Leather Jacket",
-      "description": "Áo khoác da thời trang cho mùa đông.",
-      "price": 150,
-      "oldPrice": 180,
+      "name": "Áo khoác da",
+      "description": "Áo khoác da thời trang là lựa chọn hoàn hảo cho mùa đông, mang lại sự ấm áp và phong cách lịch lãm. Chất liệu da chất lượng cao giúp bảo vệ khỏi gió lạnh và thời tiết khắc nghiệt.",
+      "price": 150000,
+      "oldPrice": 180000,
       "images": [
         "/src/assets/img/card-1.png",
         "/src/assets/img/card-2.png",
         "/src/assets/img/card-3.png",
         "/src/assets/img/card-4.png"
       ],
+      
+      "quantity":8,
       "rating": 4
     },
     {
       "id": 3,
       "categoryId": 3,
-      "name": "Washing Machine X100",
-      "description": "Máy giặt hiệu suất cao với nhiều chế độ giặt.",
-      "price": 400,
-      "oldPrice": 450,
+      "name": "Máy giặt X100",
+      "description": "Máy giặt X100 với hiệu suất cao và nhiều chế độ giặt khác nhau sẽ giúp bạn tiết kiệm thời gian và năng lượng. Thiết kế tiện dụng cùng khả năng giặt sạch sâu mọi loại vải.",
+      "price": 400000,
+      "oldPrice": 450000,
       "images": [
         "/src/assets/img/card-3.png",
         "/src/assets/img/card-2.png",
         "/src/assets/img/card-1.png",
         "/src/assets/img/card-4.png"
       ],
+      
+      "quantity":8,
       "rating": 5
     },
     {
       "id": 4,
       "categoryId": 4,
-      "name": "Mystery Novel",
-      "description": "Tiểu thuyết trinh thám lôi cuốn và hấp dẫn.",
-      "price": 20,
-      "oldPrice": 25,
+      "name": "Tiểu thuyết trinh thám",
+      "description": "Tiểu thuyết trinh thám hấp dẫn và lôi cuốn, đưa bạn vào những cuộc phiêu lưu kỳ bí và những bí mật chưa được khám phá. Một cuốn sách không thể bỏ qua cho những ai yêu thích thể loại này.",
+      "price": 20000,
+      "oldPrice": 25000,
       "images": [
         "/src/assets/img/card-4.png",
         "/src/assets/img/card-2.png",
         "/src/assets/img/card-3.png",
         "/src/assets/img/card-1.png"
       ],
+      
+      "quantity":8,
       "rating": 4
     },
     {
       "id": 5,
       "categoryId": 5,
-      "name": "Tennis Racket Pro",
-      "description": "Vợt tennis chuyên nghiệp cho người chơi nâng cao.",
-      "price": 120,
-      "oldPrice": 150,
+      "name": "Vợt tennis chuyên nghiệp",
+      "description": "Vợt tennis Pro dành cho những người chơi nâng cao, mang đến sự ổn định và chính xác trong từng cú đánh. Được làm từ vật liệu chất lượng cao, sản phẩm này giúp tối ưu hóa hiệu suất thi đấu.",
+      "price": 120000,
+      "oldPrice": 150000,
       "images": [
         "/src/assets/img/card-3.png",
         "/src/assets/img/card-1.png",
         "/src/assets/img/card-2.png",
         "/src/assets/img/card-4.png"
       ],
+      
+      "quantity":8,
       "rating": 4
     },
     {
       "id": 6,
       "categoryId": 3,
-      "name": "Skin Care Set",
-      "description": "Bộ chăm sóc da cao cấp cho làn da sáng mịn.",
-      "price": 85,
-      "oldPrice": 100,
+      "name": "Bộ chăm sóc da",
+      "description": "Bộ chăm sóc da cao cấp này cung cấp đầy đủ các sản phẩm cần thiết để duy trì làn da sáng mịn và khỏe mạnh. Được làm từ các thành phần tự nhiên, bộ sản phẩm giúp tái tạo và nuôi dưỡng làn da hiệu quả.",
+      "price": 85000,
+      "oldPrice": 100000,
       "images": [
         "/src/assets/img/card-4.png",
         "/src/assets/img/card-1.png",
         "/src/assets/img/card-2.png",
         "/src/assets/img/card-3.png"
       ],
+      
+      "quantity":8,
       "rating": 5
     },
     {
       "id": 7,
       "categoryId": 1,
-      "name": "Building Blocks Set",
-      "description": "Bộ đồ chơi xếp hình phát triển trí tuệ cho trẻ.",
-      "price": 50,
-      "oldPrice": 60,
+      "name": "Bộ xếp hình trí tuệ",
+      "description": "Bộ đồ chơi xếp hình phát triển trí tuệ giúp trẻ em cải thiện kỹ năng tư duy và sáng tạo. Với nhiều mảnh ghép đa dạng, sản phẩm này không chỉ giải trí mà còn giáo dục.",
+      "price": 50000,
+      "oldPrice": 60000,
       "images": [
         "/src/assets/img/card-3.png",
         "/src/assets/img/card-1.png",
         "/src/assets/img/card-2.png",
         "/src/assets/img/card-4.png"
       ],
+      
+      "quantity":8,
       "rating": 4
     },
     {
       "id": 8,
       "categoryId": 3,
-      "name": "Car Vacuum Cleaner",
-      "description": "Máy hút bụi ô tô nhỏ gọn và tiện lợi.",
-      "price": 45,
-      "oldPrice": 55,
+      "name": "Máy hút bụi ô tô",
+      "description": "Máy hút bụi ô tô nhỏ gọn và tiện lợi, giúp bạn dễ dàng làm sạch mọi ngóc ngách trong xe. Với công suất mạnh mẽ, sản phẩm này là người bạn đồng hành không thể thiếu cho mọi chuyến đi.",
+      "price": 45000,
+      "oldPrice": 55000,
       "images": [
         "/src/assets/img/card-4.png",
         "/src/assets/img/card-1.png",
         "/src/assets/img/card-2.png",
         "/src/assets/img/card-3.png"
       ],
+      
+      "quantity":8,
       "rating": 4
     },
     {
       "id": 9,
       "categoryId": 5,
-      "name": "Vitamin C Supplement",
-      "description": "Thực phẩm chức năng bổ sung vitamin C.",
-      "price": 25,
-      "oldPrice": 30,
+      "name": "Bổ sung vitamin C",
+      "description": "Thực phẩm chức năng bổ sung vitamin C giúp tăng cường hệ miễn dịch và duy trì sức khỏe tổng thể. Sản phẩm này rất dễ dàng sử dụng và thích hợp cho mọi lứa tuổi.",
+      "price": 25000,
+      "oldPrice": 30000,
       "images": [
         "/src/assets/img/card-1.png",
         "/src/assets/img/card-2.png",
         "/src/assets/img/card-3.png",
         "/src/assets/img/card-4.png"
       ],
+      
+      "quantity":8,
       "rating": 5
     },
     {
       "id": 10,
       "categoryId": 2,
-      "name": "Office Chair",
-      "description": "Ghế văn phòng thoải mái cho thời gian làm việc dài.",
-      "price": 100,
-      "oldPrice": 130,
+      "name": "Ghế văn phòng",
+      "description": "Ghế văn phòng thoải mái với thiết kế hiện đại, hỗ trợ tốt cho cột sống và giúp giảm mệt mỏi khi ngồi làm việc lâu. Chất liệu cao cấp và độ bền cao là điểm nổi bật của sản phẩm này.",
+      "price": 100000,
+      "oldPrice": 130000,
       "images": [
         "/src/assets/img/card-1.png",
         "/src/assets/img/card-2.png",
         "/src/assets/img/card-3.png",
         "/src/assets/img/card-4.png"
       ],
+      
+      "quantity":8,
       "rating": 5
     },
     {
       "id": 11,
       "categoryId": 1,
-      "name": "Tablet Z7",
-      "description": "Máy tính bảng mạnh mẽ với màn hình 10 inch.",
-      "price": 350,
-      "oldPrice": 400,
+      "name": "Máy tính bảng Z7",
+      "description": "Máy tính bảng Z7 với màn hình 10 inch mang lại trải nghiệm tuyệt vời cho việc giải trí và công việc. Hiệu suất mạnh mẽ và thiết kế gọn nhẹ giúp bạn dễ dàng mang theo và sử dụng mọi lúc, mọi nơi.",
+      "price": 350000,
+      "oldPrice": 400000,
       "images": [
         "/src/assets/img/card-1.png",
         "/src/assets/img/card-2.png",
         "/src/assets/img/card-3.png",
         "/src/assets/img/card-4.png"
       ],
+      
+      "quantity":8,
       "rating": 5
     },
     {
       "id": 12,
       "categoryId": 2,
-      "name": "Sneakers Run",
-      "description": "Giày thể thao thoải mái cho hoạt động hàng ngày.",
-      "price": 90,
-      "oldPrice": 110,
+      "name": "Giày thể thao",
+      "description": "Giày thể thao Run thoải mái cho hoạt động hàng ngày với thiết kế thời trang và chất liệu thoáng khí. Đế giày chắc chắn và mềm mại giúp giảm chấn thương và tăng cường hiệu suất khi vận động.",
+      "price": 90000,
+      "oldPrice": 110000,
       "images": [
         "/src/assets/img/card-1.png",
         "/src/assets/img/card-2.png",
         "/src/assets/img/card-3.png",
         "/src/assets/img/card-4.png"
       ],
+      
+      "quantity":8,
       "rating": 4
     },
     {
       "id": 13,
       "categoryId": 3,
-      "name": "Refrigerator CoolMax",
-      "description": "Tủ lạnh dung tích lớn với công nghệ làm lạnh nhanh.",
-      "price": 500,
-      "oldPrice": 550,
+      "name": "Tủ lạnh CoolMax",
+      "description": "Tủ lạnh dung tích lớn với công nghệ làm lạnh nhanh giúp bảo quản thực phẩm tươi ngon hơn. Thiết kế hiện đại và tiết kiệm điện năng, sản phẩm này là sự lựa chọn hoàn hảo cho gia đình bạn.",
+      "price": 500000,
+      "oldPrice": 550000,
       "images": [
         "/src/assets/img/card-1.png",
         "/src/assets/img/card-2.png",
         "/src/assets/img/card-3.png",
         "/src/assets/img/card-4.png"
       ],
+      
+      "quantity":8,
       "rating": 5
     },
     {
       "id": 14,
       "categoryId": 4,
-      "name": "Cookbook",
-      "description": "Sách dạy nấu ăn với nhiều công thức hấp dẫn.",
-      "price": 35,
-      "oldPrice": 45,
+      "name": "Sách nấu ăn",
+      "description": "Sách dạy nấu ăn với nhiều công thức hấp dẫn, từ món ăn gia đình đến món ăn quốc tế. Cuốn sách này là trợ thủ đắc lực cho những ai yêu thích nấu nướng và muốn khám phá những hương vị mới lạ.",
+      "price": 35000,
+      "oldPrice": 45000,
       "images": [
         "/src/assets/img/card-1.png",
         "/src/assets/img/card-2.png",
         "/src/assets/img/card-3.png",
         "/src/assets/img/card-4.png"
       ],
+      
+      "quantity":8,
       "rating": 4
     },
     {
       "id": 15,
       "categoryId": 5,
-      "name": "Camping Tent",
-      "description": "Lều cắm trại chống nước và bền bỉ.",
-      "price": 150,
-      "oldPrice": 180,
+      "name": "Lều cắm trại",
+      "description": "Lều cắm trại chống nước và bền bỉ, lý tưởng cho những chuyến dã ngoại và cắm trại. Thiết kế dễ dàng lắp đặt và gọn nhẹ, sản phẩm này mang lại sự tiện lợi và an toàn cho những chuyến đi của bạn.",
+      "price": 150000,
+      "oldPrice": 180000,
       "images": [
         "/src/assets/img/card-1.png",
         "/src/assets/img/card-2.png",
         "/src/assets/img/card-3.png",
         "/src/assets/img/card-4.png"
       ],
+      
+      "quantity":8,
       "rating": 4
     },
     {
       "id": 16,
       "categoryId": 2,
-      "name": "Hair Dryer Pro",
-      "description": "Máy sấy tóc chuyên nghiệp với nhiều chế độ.",
-      "price": 60,
-      "oldPrice": 75,
+      "name": "Máy sấy tóc chuyên nghiệp",
+      "description": "Máy sấy tóc Pro với nhiều chế độ sấy khác nhau, giúp bạn dễ dàng tạo kiểu tóc đẹp mỗi ngày. Sản phẩm này được thiết kế với công nghệ tiên tiến, giảm thiểu hư tổn tóc và giữ cho mái tóc luôn khỏe mạnh.",
+      "price": 60000,
+      "oldPrice": 75000,
       "images": [
         "/src/assets/img/card-1.png",
         "/src/assets/img/card-2.png",
         "/src/assets/img/card-3.png",
         "/src/assets/img/card-4.png"
       ],
+      
+      "quantity":8,
       "rating": 5
     },
     {
       "id": 17,
       "categoryId": 1,
-      "name": "Remote Control Car",
-      "description": "Ô tô điều khiển từ xa vui nhộn cho trẻ em.",
-      "price": 80,
-      "oldPrice": 100,
+      "name": "Ô tô điều khiển từ xa",
+      "description": "Ô tô điều khiển từ xa vui nhộn dành cho trẻ em, giúp phát triển kỹ năng vận động và sự sáng tạo. Sản phẩm có thiết kế bắt mắt và tính năng điều khiển dễ dàng, mang lại những giờ phút giải trí thú vị cho trẻ.",
+      "price": 80000,
+      "oldPrice": 100000,
       "images": [
         "/src/assets/img/card-1.png",
         "/src/assets/img/card-2.png",
         "/src/assets/img/card-3.png",
         "/src/assets/img/card-4.png"
       ],
+      
+      "quantity":8,
       "rating": 4
     },
     {
       "id": 18,
       "categoryId": 5,
-      "name": "Car GPS Navigator",
-      "description": "Hệ thống định vị GPS cho ô tô chính xác.",
-      "price": 200,
-      "oldPrice": 230,
+      "name": "Hệ thống định vị GPS",
+      "description": "Hệ thống định vị GPS chính xác dành cho ô tô, giúp bạn dễ dàng tìm đường và tránh tình trạng lạc đường. Sản phẩm có giao diện thân thiện và tính năng cập nhật bản đồ liên tục.",
+      "price": 200000,
+      "oldPrice": 230000,
       "images": [
         "/src/assets/img/card-1.png",
         "/src/assets/img/card-2.png",
         "/src/assets/img/card-3.png",
         "/src/assets/img/card-4.png"
       ],
+      
+      "quantity":8,
       "rating": 5
     },
     {
       "id": 19,
       "categoryId": 3,
-      "name": "Fitness Tracker",
-      "description": "Thiết bị theo dõi sức khỏe và thể thao.",
-      "price": 75,
-      "oldPrice": 90,
+      "name": "Thiết bị theo dõi sức khỏe",
+      "description": "Thiết bị theo dõi sức khỏe và thể thao giúp bạn giám sát các chỉ số sức khỏe hàng ngày. Với nhiều tính năng hiện đại, sản phẩm này hỗ trợ bạn trong việc duy trì lối sống lành mạnh và cân bằng.",
+      "price": 75000,
+      "oldPrice": 90000,
       "images": [
         "/src/assets/img/card-1.png",
         "/src/assets/img/card-2.png",
         "/src/assets/img/card-3.png",
         "/src/assets/img/card-4.png"
       ],
+      
+      "quantity":8,
       "rating": 4
     },
     {
       "id": 20,
       "categoryId": 4,
-      "name": "Printer DeskJet",
-      "description": "Máy in văn phòng với chất lượng in sắc nét.",
-      "price": 150,
-      "oldPrice": 180,
+      "name": "Máy in văn phòng DeskJet",
+      "description": "Máy in văn phòng DeskJet với chất lượng in sắc nét và tốc độ in nhanh. Sản phẩm này thích hợp cho các văn phòng nhỏ và vừa, giúp bạn giải quyết công việc một cách hiệu quả và tiết kiệm.",
+      "price": 150000,
+      "oldPrice": 180000,
       "images": [
         "/src/assets/img/card-1.png",
         "/src/assets/img/card-2.png",
         "/src/assets/img/card-3.png",
         "/src/assets/img/card-4.png"
       ],
+      
+      "quantity":8,
       "rating": 5
     },
     {
@@ -371,81 +409,6 @@
       "description": "qfrwsdcs",
       "categoryId": 3,
       "id": 23
-    },
-    {
-      "id": 24,
-      "categoryId": 8,
-      "name": "Cookbook",
-      "description": "Sách dạy nấu ăn với nhiều công thức hấp dẫn.",
-      "price": 35,
-      "oldPrice": 45,
-      "images": [
-        "/src/assets/img/card-1.png",
-        "/src/assets/img/card-2.png",
-        "/src/assets/img/card-3.png",
-        "/src/assets/img/card-4.png"
-      ],
-      "rating": 4
-    },
-    {
-      "id": 25,
-      "categoryId": 7,
-      "name": "Cookbook",
-      "description": "Sách dạy nấu ăn với nhiều công thức hấp dẫn.",
-      "price": 35,
-      "oldPrice": 45,
-      "images": [
-        "/src/assets/img/card-1.png",
-        "/src/assets/img/card-2.png",
-        "/src/assets/img/card-3.png",
-        "/src/assets/img/card-4.png"
-      ],
-      "rating": 4
-    },
-    {
-      "id": 26,
-      "categoryId": 6,
-      "name": "Cookbook",
-      "description": "Sách dạy nấu ăn với nhiều công thức hấp dẫn.",
-      "price": 35,
-      "oldPrice": 45,
-      "images": [
-        "/src/assets/img/card-1.png",
-        "/src/assets/img/card-2.png",
-        "/src/assets/img/card-3.png",
-        "/src/assets/img/card-4.png"
-      ],
-      "rating": 4
-    },
-    {
-      "id": 27,
-      "categoryId": 7,
-      "name": "Cookbook",
-      "description": "Sách dạy nấu ăn với nhiều công thức hấp dẫn.",
-      "price": 35,
-      "oldPrice": 45,
-      "images": [
-        "/src/assets/img/card-1.png",
-        "/src/assets/img/card-2.png",
-        "/src/assets/img/card-3.png",
-        "/src/assets/img/card-4.png"
-      ],
-      "rating": 4
-    },
-    {
-      "id": 28,
-      "categoryId": 8,
-      "name": "Cookbook",
-      "description": "Sách dạy nấu ăn với nhiều công thức hấp dẫn.",
-      "price": 35,
-      "oldPrice": 45,
-      "images": [
-        "/src/assets/img/card-1.png",
-        "/src/assets/img/card-2.png",
-        "/src/assets/img/card-3.png",
-        "/src/assets/img/card-4.png"
-      ],
-      "rating": 4
     }
   ],
   "reviews": [
@@ -453,6 +416,8 @@
       "id": 1,
       "productId": 1,
       "username": "Nguyen Van A",
+      
+      "quantity":8,
       "rating": 5,
       "comment": "Sản phẩm rất tốt!"
     },
@@ -460,6 +425,8 @@
       "id": 2,
       "productId": 2,
       "username": "Tran Thi B",
+      
+      "quantity":8,
       "rating": 4,
       "comment": "Tôi hài lòng với sản phẩm này."
     },
@@ -467,6 +434,8 @@
       "id": 3,
       "productId": 3,
       "username": "Le Van C",
+      
+      "quantity":8,
       "rating": 4,
       "comment": "Giá cả hợp lý."
     },
@@ -474,6 +443,8 @@
       "id": 4,
       "productId": 4,
       "username": "Pham Thi D",
+      
+      "quantity":8,
       "rating": 4,
       "comment": "Sản phẩm đúng như mô tả."
     },
@@ -481,6 +452,8 @@
       "id": 5,
       "productId": 5,
       "username": "Hoang Thi E",
+      
+      "quantity":8,
       "rating": 5,
       "comment": "Sản phẩm chất lượng cao, rất đáng giá."
     },
@@ -488,6 +461,8 @@
       "id": 6,
       "productId": 6,
       "username": "Le Thi F",
+      
+      "quantity":8,
       "rating": 5,
       "comment": "Da mình đã cải thiện rõ rệt."
     },
@@ -495,6 +470,8 @@
       "id": 7,
       "productId": 7,
       "username": "Nguyen Thi G",
+      
+      "quantity":8,
       "rating": 4,
       "comment": "Trẻ rất thích chơi với bộ đồ chơi này."
     },
@@ -502,6 +479,8 @@
       "id": 8,
       "productId": 8,
       "username": "Vu Thi H",
+      
+      "quantity":8,
       "rating": 4,
       "comment": "Máy hút bụi hoạt động tốt, dễ sử dụng."
     },
@@ -509,6 +488,8 @@
       "id": 9,
       "productId": 9,
       "username": "Nguyen Van I",
+      
+      "quantity":8,
       "rating": 5,
       "comment": "Rất hài lòng với hiệu quả của sản phẩm."
     },
@@ -516,8 +497,40 @@
       "id": 10,
       "productId": 10,
       "username": "Tran Van J",
+      
+      "quantity":8,
       "rating": 5,
       "comment": "Ghế văn phòng rất thoải mái, hỗ trợ lưng tốt."
+    }
+  ],
+  "users": [
+    {
+      "email": "angocit@gmail.com",
+      "password": "$2a$10$aOGppJubKWKmpSOmKIww6.J5.4uT5Ye4vBBFD0We0KijIrR4SHbm2",
+      "name": "Ngoc",
+      "id": 1
+    },
+    {
+      "email": "hung99379@gmail.com",
+      "password": "$2a$10$scZuYm8YyQoAnHNPXLewMe7/n51h3uJvoQcXnTaY.S8IRs2dxaYWi",
+      "id": 2
+    },
+    {
+      "email": "lequyhieu1024@gmail.com",
+      "password": "$2a$10$eWYTHxRj3Bm1HBq31nU5Hu.Ha2D.UPIfjY4ihraNKnoMZMQYd0JyO",
+      "id": 3
+    }
+  ],
+  "cart": [
+    {
+      "product": 5,
+      "quantity": 1,
+      "id": 1
+    },
+    {
+      "product": 4,
+      "quantity": 1,
+      "id": 2
     }
   ]
 }

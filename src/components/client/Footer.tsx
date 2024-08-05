@@ -1,4 +1,3 @@
-
 const Footer = () => {
     return (
         <footer className="bg-green-900 text-white">
@@ -6,8 +5,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                     <div>
                         <p>
-                            Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do
-                            Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua
+                            Hãy để nỗi đau tự nó tốt, và mọi người sẽ có thể đạt được nó, nhưng hãy để nó xảy ra đồng thời rằng công việc và nỗi đau sẽ rất lớn.
                         </p>
                         <div className="flex space-x-4 mt-4">
                             <a href="#"><i className="mr-4 fa-brands fa-lg fa-facebook" /></a>
@@ -18,40 +16,32 @@ const Footer = () => {
                         </div>
                     </div>
                     <div>
-                        <h3 className="font-semibold mb-4">Um</h3>
+                        <h3 className="font-semibold mb-4">Về Chúng Tôi</h3>
                         <ul>
-                            <li><a href="#" className="hover:underline">Kontaktiere Uns</a></li>
-                            <li><a href="#" className="hover:underline">Über Uns</a></li>
-                            <li><a href="#" className="hover:underline">Karriere</a></li>
-                            <li>
-                                <a href="#" className="hover:underline">Unternehmensinformationen</a>
-                            </li>
+                            <li><a href="#" className="hover:underline">Liên hệ với chúng tôi</a></li>
+                            <li><a href="#" className="hover:underline">Về chúng tôi</a></li>
+                            <li><a href="#" className="hover:underline">Cơ hội nghề nghiệp</a></li>
+                            <li><a href="#" className="hover:underline">Thông tin công ty</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h3 className="font-semibold mb-4">Hilfe</h3>
+                        <h3 className="font-semibold mb-4">Hỗ Trợ</h3>
                         <ul>
-                            <li>
-                                <a href="#" className="hover:underline">Unsere Produzenten</a>
-                            </li>
-                            <li><a href="#" className="hover:underline">Zahlung</a></li>
-                            <li><a href="#" className="hover:underline">Versand</a></li>
-                            <li>
-                                <a href="#" className="hover:underline">Stornierung &amp; Rückgabe</a>
-                            </li>
-                            <li><a href="#" className="hover:underline">Verstoß Melden</a></li>
+                            <li><a href="#" className="hover:underline">Nhà cung cấp của chúng tôi</a></li>
+                            <li><a href="#" className="hover:underline">Thanh toán</a></li>
+                            <li><a href="#" className="hover:underline">Giao hàng</a></li>
+                            <li><a href="#" className="hover:underline">Hủy bỏ &amp; Trả hàng</a></li>
+                            <li><a href="#" className="hover:underline">Báo cáo vi phạm</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h3 className="font-semibold mb-4">politik</h3>
+                        <h3 className="font-semibold mb-4">Chính Sách</h3>
                         <ul>
-                            <li><a href="#" className="hover:underline">Rücknahmegarantie</a></li>
-                            <li>
-                                <a href="#" className="hover:underline">Nutzungsbedingungen</a>
-                            </li>
-                            <li><a href="#" className="hover:underline">Sicherheit</a></li>
-                            <li><a href="#" className="hover:underline">Privatsphäre</a></li>
-                            <li><a href="#" className="hover:underline">Seitenverzeichnis</a></li>
+                            <li><a href="#" className="hover:underline">Chính sách hoàn trả</a></li>
+                            <li><a href="#" className="hover:underline">Điều khoản sử dụng</a></li>
+                            <li><a href="#" className="hover:underline">An ninh</a></li>
+                            <li><a href="#" className="hover:underline">Quyền riêng tư</a></li>
+                            <li><a href="#" className="hover:underline">Danh mục trang</a></li>
                         </ul>
                     </div>
                 </div>
@@ -60,12 +50,11 @@ const Footer = () => {
                     <div className="flex space-x-4">
                         <img src="src/assets/img/pay.png" alt="MasterCard" className="h-6" />
                     </div>
-                    <a href="#" className="text-white hover:underline">Scroll to top ↑</a>
+                    <a href="#" className="text-white hover:underline">Cuộn lên trên ↑</a>
                 </div>
             </div>
         </footer>
-
     )
 }
 
-export default Footer
+export default Footer;

@@ -5,13 +5,16 @@ import { Link } from 'react-router-dom'
 
 const ProductList = () => {
     const { products, onDelete } = useContext(productCT)
+    const formatCurrency = (amount: number) => {
+        return amount.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+    };
     return (
         <div>
             <div className="flex items-center justify-between">
                 <h1 className="text-xl font-bold">Quản lý sản phẩm</h1>
                 <Link to={`product/add`} className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Thêm sản phẩm</Link>
             </div>
-            <table className="min-w-full divide-y divide-gray-200 mt-4 border border-gray-300">
+            <table className="max-w-full divide-y divide-gray-200 mt-4 border border-gray-300">
                 <thead>
                     <tr>
 
@@ -33,12 +36,12 @@ const ProductList = () => {
                         <tr key={product.id} >
                             <td className="px-6 py-4 whitespace-nowrap text-center">{index + 1}</td>
                             <td className="px-6 py-4 whitespace-nowrap">{product.name}</td>
-                            <td className="px-6 py-4 whitespace-nowrap">{product.price}</td>
+                            <td className="px-6 py-4 whitespace-nowrap">{formatCurrency(product.price)}</td>
                             <td className="px-6 py-4 whitespace-nowrap">
                                 <img width={50} src={product.images[0]} alt={product.name} />
                             </td>
-                            <td className="px-6 py-4 whitespace-nowrap">{product.description}</td>
-                            <td className="px-6 py-4 whitespace-nowrap flex items-center space-x-2">
+                            <td className="px-6 py-4">{product.description}</td>
+                            <td className="px-6 py-4 whitespace-nowrap  space-x-2">
                                 <Link to={`product/edit/${product.id}`}
                                     className="bg-blue-500 text-white py-1 px-3 rounded hover:bg-blue-600">Cập nhập</Link>
                                 <button onClick={() => onDelete(product.id)} className="bg-red-500 text-white py-1 px-3 rounded hover:bg-red-600">

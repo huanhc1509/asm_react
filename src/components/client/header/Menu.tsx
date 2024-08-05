@@ -12,13 +12,13 @@ const Menu = ({ category }: Props) => {
             <Link to={`category/${category.id}`} className="hover:underline pb-4 text-white">{category.name}</Link>
             <ul className="absolute inset-x-0 mt-2 w-48 bg-white hidden group-hover:block z-20">
                 <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100">Eckige Töpfe</a>
+                    <a href="#" className="block px-4 py-2 hover:bg-gray-100">Quần</a>
                 </li>
                 <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100">Runde Töpfe</a>
+                    <a href="#" className="block px-4 py-2 hover:bg-gray-100">Áo</a>
                 </li>
                 <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100">Untersetzer</a>
+                    <a href="#" className="block px-4 py-2 hover:bg-gray-100">Giày</a>
                 </li>
             </ul>
             {/* <i className="fa-solid fa-angle-down ml-2"></i> */}

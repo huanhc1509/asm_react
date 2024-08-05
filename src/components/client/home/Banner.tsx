@@ -30,14 +30,14 @@ const Banner = () => {
 
                 <div className="relative w-full h-full overflow-hidden">
                     <div className="absolute top-1/2 left-40 transform -translate-y-1/2 w-2/5 p-4 z-10">
-                        <h1 className="text-5xl font-bold text-[#505F4E]">
-                            Wir kümmern uns um Ihren schönen Garten und Haus
+                        <h1 className="text-5xl leading-tight font-bold text-[#505F4E]">
+                            Chúng tôi là một trong những người làm vườn và nhà đẹp nhất của bạn
                         </h1>
                         <p className="mt-4 text-[#665345] w-8/12">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            Lorem Ipsum chỉ đơn giản là văn bản giả của ngành in ấn và sắp chữ. Lorem Ipsum đã là văn bản giả chuẩn của ngành kể từ những năm 1500,
                         </p>
-                        <button className="py-4 px-12 border-4 border-[#505F4E] mt-4 hover:bg-green-600">
-                            Lern mehr
+                        <button className="text-xl font-semibold text-[#505F4E] py-4 px-12 border-4 border-[#505F4E] mt-4 hover:bg-green-600">
+                            XEM THÊM
                         </button>
                     </div>
                     {images.map((image, i) => (

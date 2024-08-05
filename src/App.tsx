@@ -15,9 +15,6 @@ import LineChart from './components/client/test/LineChart ';
 import Chart from './components/client/test/Chart';
 import StackedColumnChart from './components/client/test/StackedColumnChart ';
 import AreaChart from './components/client/test/AreaChart';
-import ProductContext from './context/ProductContext';
-import AppContext from './context/AppContext';
-import CategoryContext from './context/CategoryContext';
 import ProductList from './pages/admin/product/ProductList';
 import ProductAdd from './pages/admin/product/ProductAdd';
 import ProductEdit from './pages/admin/product/ProductEdit';
@@ -25,16 +22,20 @@ import CategoryList from './pages/admin/category/CategoryList';
 import CategoryAdd from './pages/admin/category/CategoryAdd';
 import CategoryEdit from './pages/admin/category/CategoryEdit';
 import Search from './pages/client/Search';
+import Privaterouter from './privaterouter';
+import Cart from './components/client/cart/Cart';
+import UserList from './pages/admin/user/UserList';
 
 function App() {
 
   const routes = useRoutes([
     {
-      path: "", element: <AppContext><ProductContext><CategoryContext><LayoutClient /></CategoryContext></ProductContext></AppContext>, children: [
+      path: "", element: <LayoutClient />, children: [
         { path: "", element: <Home /> },
         { path: "detail/:id", element: <Detail /> },
         { path: "category/:categoryId", element: <Categorys /> },
         { path: "search", element: <Search /> },
+        { path: "cart", element: <Cart /> },
 
       ]
     },
@@ -50,13 +51,14 @@ function App() {
     },
     {
       path: "admin",
-      element: <AppContext><ProductContext><CategoryContext><LayoutAdmin /></CategoryContext></ProductContext></AppContext>, children: [
+      element: <Privaterouter><LayoutAdmin /></Privaterouter>, children: [
         { path: "", element: <ProductList /> },
         { path: "product/add", element: <ProductAdd /> },
         { path: "product/edit/:id", element: <ProductEdit /> },
         { path: "category", element: <CategoryList /> },
         { path: "category/add", element: <CategoryAdd /> },
         { path: "category/edit/:id", element: <CategoryEdit /> },
+        { path: "user", element: <UserList /> },
       ],
     },
     {

@@ -8,10 +8,8 @@ import { IProduct } from "../../../interfaces/Product";
 const Category = () => {
     const { categorys } = useContext(categoryCT);
 
-    // Assuming products are available from productCT
     const { products } = useContext(productCT);
 
-    // Function to count products by category
     const countProductsByCategory = (categoryId: number | string) => {
         return products.filter((product: IProduct) => product.categoryId === categoryId).length;
     };

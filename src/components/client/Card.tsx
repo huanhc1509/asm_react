@@ -8,6 +8,9 @@ import { productCT } from "../../context/ProductContext"
 const Card = () => {
     const { products } = useContext(productCT)
     const firstFourProducts = products.slice(0, 4)
+    const formatCurrency = (amount: number) => {
+        return amount.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+    };
     return (
 
         <div className="my-8 mx-auto">
@@ -18,18 +21,15 @@ const Card = () => {
                         <div className="h-[350px] overflow-hidden">
                             <img className="h-full mx-auto p-4 hover:scale-110 duration-500" src={product.images[0]} alt={product.name} />
                         </div>
-                        <div className="flex justify-between px-2">
-                            <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
-                            <div className="flex justify-between items-center">
-                                <div className="flex gap-2">
-                                    <p className="text-red-500 font-semibold">{product.price} ₫</p>
-                                    {product.oldPrice && (
-                                        <p className="text-gray-500 line-through">{product.oldPrice} ₫</p>
-                                    )}
-                                </div>
-                            </div>
+                        <h3 className="font-semibold truncate text-xl my-2">{product.name}</h3>
+                        <div className="flex gap-2 text-xl my-2">
+                            <p className="text-red-500 font-semibold whitespace-nowrap">{formatCurrency(product.price)}</p>
+                            {product.oldPrice && (
+                                <p className="text-gray-500 line-through whitespace-nowrap">{formatCurrency(product.oldPrice)}</p>
+                            )}
                         </div>
-                        <p className="text-gray-700 px-2">{product.description}</p>
+
+                        <p className="text-gray-700 text-sm truncate">{product.description}</p>
                     </Link>
                 ))}
             </div>

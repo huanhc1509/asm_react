@@ -1,4 +1,3 @@
-import React from 'react'
 import BannerCategory from '../../components/client/category/BannerCategory'
 import CardCategory from '../../components/client/category/CardCategory'
 import Filter from '../../components/client/category/Filter'

@@ -1,21 +1,21 @@
-import { useEffect, useState } from "react";
+// components/Details.tsx
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getProductById } from "../../../services/product";
 import { IProduct } from "../../../interfaces/Product";
+import { useCart } from "../../../context/CartContext";
+import { getProductById } from "../../../services/product";
 
-const Details = () => {
-    // Use the IProduct interface for type safety
+const Details: React.FC = () => {
     const [product, setProduct] = useState<IProduct | null>(null);
     const [quantity, setQuantity] = useState<number>(1);
     const { id } = useParams<{ id: string }>();
+    const { addToCart } = useCart(); // Sử dụng hook từ CartContext
 
     useEffect(() => {
         (async () => {
             if (id) {
                 const data: IProduct = await getProductById(id);
                 setProduct(data);
-                console.log(data);
-
             }
         })();
     }, [id]);
@@ -30,10 +30,18 @@ const Details = () => {
         setQuantity(quantity + 1);
     };
 
+    const handleAddToCart = () => {
+        if (product) {
+            addToCart(product, quantity);
+        }
+    };
+
     if (!product) {
         return <div>Loading...</div>;
     }
-
+    const formatCurrency = (amount: number) => {
+        return amount.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+    };
     return (
         <>
             <div className="my-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-36">
@@ -44,11 +52,10 @@ const Details = () => {
                             <img
                                 key={index}
                                 src={image}
-                                alt={`Product ${index + 2}`} // Chỉnh số thứ tự bắt đầu từ 2
+                                alt={`Product ${index + 2}`}
                                 className="h-full hover:border-2 hover:border-black border-2 border-white rounded-lg"
                             />
                         ))}
-
                     </div>
                 </div>
 
@@ -57,10 +64,14 @@ const Details = () => {
                     <h1 className="text-4xl font-bold py-2">{product.name}</h1>
                     <p className="text-sm text-[#68707D] py-2">{product.description}</p>
                     <div className="flex items-center py-2">
-                        <h1 className="text-4xl font-bold pr-2">${product.price}</h1>
+                        <h1 className="text-4xl font-bold pr-2">
+                            {formatCurrency(product.price)}
+                        </h1>
                         <span className="bg-[#FFEDE0] font-bold text-[#4E7C32] rounded my-auto px-2 py-1">50%</span>
                     </div>
-                    <h1 className="text-xl font-medium pr-2 line-through">${product.oldPrice}</h1>
+                    <h1 className="text-xl font-medium pr-2 line-through">
+                        {formatCurrency(product.oldPrice)}
+                    </h1>
                     <form className="py-4">
                         <div className="relative flex">
                             <button
@@ -88,21 +99,23 @@ const Details = () => {
                                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 1v16M1 9h16" />
                                 </svg>
                             </button>
-                            <button type="button" className="w-full bg-[#4E7C32] text-white rounded-lg ml-4 h-11">
-                                <i className="fa-solid fa-card-shopping mr-2" />Add to cart
+                            <button
+                                type="button"
+                                onClick={handleAddToCart}
+                                className="w-full bg-[#4E7C32] text-white rounded-lg ml-4 h-11"
+                            >
+                                <i className="fa-solid fa-card-shopping mr-2" />Thêm vào giỏ hàng
                             </button>
                         </div>
                     </form>
                 </div>
-            </div>
-            <div className="my-8 pr-16">
-                <h3 className="text-2xl text-[#4E7C32] pt-8">Discription </h3>
+
+
+            </div><div className="my-8 pr-16">
+                <h3 className="text-2xl text-[#4E7C32] pt-8">Mô tả </h3>
                 <p className="text-lg text-[#68707D] py-2">{product.description}</p>
-                <h3 className="text-2xl text-[#4E7C32] pt-8">About </h3>
-                <p className="text-lg text-[#68707D] py-2">Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                    type and scrambled i</p>
+                <h3 className="text-2xl text-[#4E7C32] pt-8">Giới thiệu </h3>
+                <p className="text-lg text-[#68707D] py-2">Lorem Ipsum chỉ là văn bản giả của quá trình in ấn và sắp chữ Tôi đã sử dụng chất tẩy rửa này trong khoảng năm hoặc sáu tháng nay và mụn của tôi gần như đã biến mất hoàn toàn. Tôi thực sự đã vật lộn với làn da của mình trong nhiều năm và đã thử mọi cách có thể nhưng đây là thứ duy nhất có thể làm sạch da của tôi. Tôi khuyên dùng 100% và chắc chắn sẽ tiếp tục sử dụng.</p>
             </div>
             <div className="my-8 pr-16">
                 <div className="grid grid-cols-2 py-8">

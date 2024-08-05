@@ -29,7 +29,6 @@ const Reduceer = (state:TAppState,action:TAction)=>{
 }
 export const AppCT = createContext({} as any)
 const AppContext = ({children}: Props) => {
-    // const [appState,dispatch] = useReducer(Hàm xử lý Action (dispatch), giá trị khởi tạo) 
     const [appState,dispatch] = useReducer(Reduceer,{isLogin:false,isRegister:false,Message:{status:false,text:''}})
   return (
     <AppCT.Provider value={{appState,dispatch}}>{children}</AppCT.Provider>

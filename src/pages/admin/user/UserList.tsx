@@ -1,10 +1,10 @@
 import { useContext } from 'react';
-import { categoryCT } from '../../../context/CategoryContext';
-import { ICategory } from '../../../interfaces/Category';
+import { userCT } from '../../../context/UserContext';
+import { IUser } from '../../../interfaces/User';
 import { Link } from 'react-router-dom';
 
-const CategoryList = () => {
-    const { categorys, onDelete } = useContext(categoryCT);
+const UserList = () => {
+    const { users, onDelete } = useContext(userCT);
 
     return (
         <div>
@@ -21,13 +21,10 @@ const CategoryList = () => {
                             STT
                         </th>
                         <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            Tên
+                            Email
                         </th>
                         <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            Ảnh
-                        </th>
-                        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            Mô tả
+                            Mật khẩu
                         </th>
                         <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                             Thao tác
@@ -35,23 +32,20 @@ const CategoryList = () => {
                     </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
-                    {categorys.map((category: ICategory, index: number) => (
-                        <tr key={category.id}>
+                    {users.map((user: IUser, index: number) => (
+                        <tr key={user.id}>
                             <td className="px-6 py-4 whitespace-nowrap text-center">{index + 1}</td>
-                            <td className="px-6 py-4 whitespace-nowrap">{category.name}</td>
-                            <td className="px-6 py-4 whitespace-nowrap">
-                                <img width={50} src={category.images} alt={category.name} />
-                            </td>
-                            <td className="px-6 py-4">{category.description}</td>
+                            <td className="px-6 py-4 whitespace-nowrap">{user.email}</td>
+                            <td className="px-6 py-4 whitespace-nowrap">{user.password}</td>
                             <td className="px-6 py-4 whitespace-nowrap space-x-2">
                                 <Link
-                                    to={`edit/${category.id}`}
+                                    to={`edit/${user.id}`}
                                     className="bg-blue-500 text-white py-1 px-3 rounded hover:bg-blue-600"
                                 >
                                     Cập nhật
                                 </Link>
                                 <button
-                                    onClick={() => onDelete(category.id)}
+                                    onClick={() => onDelete(user.id)}
                                     className="bg-red-500 text-white py-1 px-3 rounded hover:bg-red-600"
                                 >
                                     Xóa
@@ -65,4 +59,4 @@ const CategoryList = () => {
     );
 };
 
-export default CategoryList;
+export default UserList;
